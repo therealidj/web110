@@ -1,0 +1,87 @@
+/* William Davis 11/12/26 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3241a4;
+    margin: 20px;
+}
+/* CENTER FORM */
+.container {
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+header {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3241a4;
+}
+header img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+h2{
+    margin-top: 0px;
+    color: #131313;
+    font-weight: bold;
+    font-size:2em;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#21456d;
+}
+/* Mobile Grid */
+/* INPUTS */
+input, select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+input[type="radio"] {
+    margin: 0;
+}
+/* RADIO GROUP */
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+/* SUBMIT BUTTON */
+button {
+    background-color: #ccc;
+    color: #000;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width:300px;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+/* Valid/Invalid */
+/* VALID INPUTS */
+input:user-valid, select:user-valid {
+    background-color: #c5ffa6;
+    border: 2px solid #51ff00;
+}
+/* INVALID INPUTS */
+input:user-invalid, select:user-invalid {
+    background-color: #ff9a9a;
+    border: 2px solid #ff1c1c;
+    font-style: italic;
+}
+
+input[type=text]:focus, input[type=date]:focus, select:focus {
+    background-color: #e7e7e7;
+}

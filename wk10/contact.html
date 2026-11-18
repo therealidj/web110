@@ -1,0 +1,66 @@
+<!--William Davis 11/12/26-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="logo-1.jpg" alt="logo">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Please fill out the form below.</p>
+            </header>
+            <main>
+                <form method="get" action="https://webdevbasics.net/scripts/demo.php">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" maxlength="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" maxlength="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                    </div>
+                    <div class="form-group">
+                        <label>How would you prefer we contact you?</label>
+                        <div class="contact-options">
+                            <div class="radio-options">
+                                <input type="radio" id="contactEmail" name="contactPreference" value="Email" required>
+                                <label for="contactEmail">Email</label>
+                            </div>
+                            <div class="radio-options">
+                                <input type="radio" id="contactPhone" name="contactPreference" value="Phone" required>
+                                <label for="contactPhone">Phone</label>
+                            </div>
+                            <div class="radio-options">
+                                <input type="radio" id="contactText" name="contactPreference" value="Text" required>
+                                <label for="contactText">Text</label>
+                            </div>
+                            <div class="radio-options">
+                                <input type="radio" id="contactNone" name="contactPreference" value="None" required>
+                                <label for="contactNone">No Preference</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <p>&copy; 2026 William Davis. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
